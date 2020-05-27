@@ -1,3 +1,5 @@
+package array;
+
 class InsertTraverse1DArray {
   public InsertTraverse1DArray() {
 

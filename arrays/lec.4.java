@@ -1,3 +1,5 @@
+package array;
+
 public class array {
   // creating an array:
 
