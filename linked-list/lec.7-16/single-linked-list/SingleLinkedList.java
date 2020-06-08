@@ -177,6 +177,12 @@ class SingleLinkedList {
     }
   }
 
+  public void delete() {
+    this.head = null; //O(1)
+    this.tail = null; //O(1)
+    this.setSize(0); //O(1)
+  }
+
   public static void main(String[] args) {
     SingleLinkedList sll = new SingleLinkedList(5);
     System.out.println("size: " + sll.size);
