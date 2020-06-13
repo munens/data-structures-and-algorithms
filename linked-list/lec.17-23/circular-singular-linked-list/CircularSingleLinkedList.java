@@ -128,7 +128,7 @@ class CircularSingleLinkedList {
     }
 
     if (this.size == 1) { // O(1)
-      this.head.setNext(null); // O(1)
+      this.tail.setNext(null); // O(1)
       this.head = null; // O(1)
       this.tail = null; // O(1)
       this.setSize(0); // O(1)
@@ -146,7 +146,8 @@ class CircularSingleLinkedList {
     }
 
     if (nodeIndex == this.size - 1) { // O(1)
-      for (int currentIndex = 0; currentIndex < this.size; currentIndex++) { // O(n-2)
+      currentNode = currentNode.getNext();
+      for (int currentIndex = 1; currentIndex < this.size; currentIndex++) { // O(n-2)
         if (currentIndex == this.size - 2) { // O(1)
           currentNode.setNext(this.head); // O(1)
           this.tail = currentNode; // O(1)
@@ -178,6 +179,7 @@ class CircularSingleLinkedList {
 
   public void delete() {
     this.head = null;
+    this.tail.setNext(null);
     this.tail = null;
     this.setSize(0);
   }

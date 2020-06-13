@@ -151,8 +151,8 @@ class SingleLinkedList {
     }
 
     if (nodeIndex == this.size - 1) { // O(1)
-      Node currentNode = this.head; // O(1)
-      for (int currentIndex = 0; currentIndex < this.size; currentIndex++) { // O(n)
+      Node currentNode = this.head.getNext(); // O(1)
+      for (int currentIndex = 0; currentIndex < this.size; currentIndex++) { // O(n - 2)
         if (currentIndex == this.size - 2) { // O(1)
           currentNode.setNext(null); // O(1)
           this.tail = currentNode; // O(1)
@@ -165,7 +165,7 @@ class SingleLinkedList {
     }
 
     Node prevNode = this.head; // O(1)
-    for (int currentIndex = 1; currentIndex < this.size; currentIndex++) { // O(n - 1)
+    for (int currentIndex = 1; currentIndex < this.size; currentIndex++) { // O(n - 2)
       Node nextNode = prevNode.getNext().getNext(); // O(1)
       if (nodeIndex == currentIndex) { // O(1)
         prevNode.setNext(nextNode); // O(1)
