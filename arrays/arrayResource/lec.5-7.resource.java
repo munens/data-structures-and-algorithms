@@ -1,6 +1,6 @@
-package array;
+package arrayResource;
 
-public class SingleDimensionArray {
+class SingleDimensionArray {
 	int arr[] = null;
 
     

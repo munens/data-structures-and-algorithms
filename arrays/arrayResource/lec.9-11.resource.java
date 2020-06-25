@@ -1,6 +1,6 @@
-package array;
+package arrayResource;
 
-public class TwoDimensionalArray {
+class TwoDimensionalArray {
 	int arr[][] = null;
 
 	// Constructor

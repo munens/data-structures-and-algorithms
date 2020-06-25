@@ -1,5 +1,6 @@
+package array;
 
-class TwoDimensionalArray {
+public class TwoDimensionalArray {
 
   // 1. declaration
   int[][] arr;

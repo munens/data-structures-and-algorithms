@@ -1,6 +1,6 @@
 import java.lang.Math;
 
-public class FindTimeComplexity {
+class FindTimeComplexity {
 
   public FindTimeComplexity() {}
 

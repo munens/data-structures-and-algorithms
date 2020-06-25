@@ -1,6 +1,6 @@
 package array;
 
-public class array {
+class array {
   // creating an array:
 
   // 1, declaration:

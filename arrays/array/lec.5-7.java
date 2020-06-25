@@ -18,7 +18,7 @@ class InsertTraverse1DArray {
 
   public int access(int[] array, int index) {
     if (index < 0 || index > array.length - 1) {
-      System.out.println("value does not exist at index = ", index );
+      System.out.println("value does not exist at index = " + index );
       return -1;
     }
 
@@ -42,7 +42,7 @@ class InsertTraverse1DArray {
 
     if (index < 0 || index > array.length - 1) { // O(1)
 
-      System.out.println("value does not exist at index = ", index ); // O(1)
+      System.out.println("value does not exist at index = " + index ); // O(1)
 
       return array; // O(1)
 

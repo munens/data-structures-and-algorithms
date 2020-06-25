@@ -1,6 +1,6 @@
-package array;
+package arrayResource;
 
-public class TwoDimensionalArrayMain {
+class TwoDimensionalArrayMain {
 
 	public static void main(String[] args) {
 

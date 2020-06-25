@@ -1,4 +1,4 @@
-public class AlgorithmRunTimeAnalysis {
+class AlgorithmRunTimeAnalysis {
 
   public AlgorithmRunTimeAnalysis() {}
 
